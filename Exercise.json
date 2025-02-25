@@ -423,6 +423,15 @@
         "name": "assets\\Plat1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Gem1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Gem1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -469,8 +478,8 @@
           "name": "Girl",
           "persistentUuid": "244f97b0-1cff-4f12-8aea-ffda07cbcfbb",
           "width": 0,
-          "x": 369,
-          "y": 76,
+          "x": 395,
+          "y": 312,
           "zOrder": 1,
           "numberProperties": [
             {
@@ -497,6 +506,106 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTiledSprite",
+          "persistentUuid": "45467bfe-5eee-47f7-ad4a-9845cb3e4dfe",
+          "width": 226,
+          "x": 549,
+          "y": 281,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "cf802583-702c-4768-bdf2-1120743ac7ca",
+          "width": 272,
+          "x": 263,
+          "y": 257,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 180,
+          "keepRatio": true,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "fe910ef4-2d92-4fa7-b5b0-fd79e54aac37",
+          "width": 69,
+          "x": 864,
+          "y": 253,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 67,
+          "keepRatio": true,
+          "layer": "",
+          "name": "gem",
+          "persistentUuid": "3455b7a8-206c-42de-a031-14e15b5524db",
+          "width": 48,
+          "x": 641,
+          "y": 204,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "gem",
+          "persistentUuid": "22987b3c-b147-4593-bb23-2dd97d1bc822",
+          "width": 0,
+          "x": 793,
+          "y": 337,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "gem",
+          "persistentUuid": "3c5aff93-10d8-4777-ba62-7d1923c5d588",
+          "width": 0,
+          "x": 1010,
+          "y": 280,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -510,21 +619,21 @@
           "effects": [],
           "behaviors": [
             {
-              "acceleration": 1500,
               "canGoDownFromJumpthru": true,
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "acceleration": 1500,
               "canGrabPlatforms": false,
               "canGrabWithoutMoving": true,
               "deceleration": 1500,
               "gravity": 1000,
               "ignoreDefaultControls": false,
-              "jumpSpeed": 600,
+              "jumpSpeed": 900,
               "jumpSustainTime": 0.2,
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
@@ -565,12 +674,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -601,12 +710,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -637,12 +746,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -673,12 +782,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -709,12 +818,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -745,12 +854,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -781,12 +890,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -817,12 +926,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -853,12 +962,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -889,12 +998,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -937,12 +1046,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -973,12 +1082,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1009,12 +1118,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1045,12 +1154,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1081,12 +1190,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1117,12 +1226,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1153,12 +1262,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1189,12 +1298,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1237,12 +1346,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1273,12 +1382,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1309,12 +1418,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1345,12 +1454,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1381,12 +1490,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1417,12 +1526,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1453,12 +1562,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1489,12 +1598,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1525,12 +1634,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1561,12 +1670,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1609,12 +1718,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1645,12 +1754,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1681,12 +1790,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1717,12 +1826,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1753,12 +1862,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1789,12 +1898,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1825,12 +1934,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1861,12 +1970,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1897,12 +2006,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1933,12 +2042,12 @@
                             "y": 6
                           },
                           {
-                            "x": 121,
-                            "y": 152
+                            "x": 119.5,
+                            "y": 144
                           },
                           {
-                            "x": 32,
-                            "y": 152
+                            "x": 33.5,
+                            "y": 144.5
                           }
                         ]
                       ]
@@ -1959,10 +2068,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -2028,10 +2137,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
+              "platformType": "Ladder",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
               "yGrabOffset": 0
             }
           ],
@@ -2097,11 +2206,85 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "Jumpthru",
               "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "gem",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Glow",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 15,
+                "innerStrength": 1,
+                "outerStrength": 5
+              },
+              "stringParameters": {
+                "color": "248;231;28"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Gem1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 68,
+                            "y": 0
+                          },
+                          {
+                            "x": 68,
+                            "y": 94
+                          },
+                          {
+                            "x": 0,
+                            "y": 94
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -2120,6 +2303,9 @@
           },
           {
             "objectName": "NewTiledSprite"
+          },
+          {
+            "objectName": "gem"
           }
         ]
       },
@@ -2253,6 +2439,88 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::CurrentSpeed"
+                      },
+                      "parameters": [
+                        "Girl",
+                        "PlatformerObject",
+                        "<",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "Girl",
+                        "Flippable",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "Girl",
+                        "Flippable",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Right"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "Girl",
+                        "Flippable",
+                        "no"
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -2296,7 +2564,41 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": ""
+          "comment": "Gem"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Girl",
+                "gem",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "gem",
+                "+",
+                "5"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
