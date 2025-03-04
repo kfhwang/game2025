@@ -441,6 +441,79 @@
         "name": "assets\\Gem2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/coin.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\coin.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "2D-Fantasy-Orcs-Free-Sprite-Sheets/1_ORK/WALK/WALK_000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2D-Fantasy-Orcs-Free-Sprite-Sheets\\1_ORK\\WALK\\WALK_000.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "2D-Fantasy-Orcs-Free-Sprite-Sheets/1_ORK/WALK/WALK_001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2D-Fantasy-Orcs-Free-Sprite-Sheets\\1_ORK\\WALK\\WALK_001.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "2D-Fantasy-Orcs-Free-Sprite-Sheets/1_ORK/WALK/WALK_002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2D-Fantasy-Orcs-Free-Sprite-Sheets\\1_ORK\\WALK\\WALK_002.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "2D-Fantasy-Orcs-Free-Sprite-Sheets/1_ORK/WALK/WALK_003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2D-Fantasy-Orcs-Free-Sprite-Sheets\\1_ORK\\WALK\\WALK_003.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "2D-Fantasy-Orcs-Free-Sprite-Sheets/1_ORK/WALK/WALK_004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2D-Fantasy-Orcs-Free-Sprite-Sheets\\1_ORK\\WALK\\WALK_004.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "2D-Fantasy-Orcs-Free-Sprite-Sheets/1_ORK/WALK/WALK_005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2D-Fantasy-Orcs-Free-Sprite-Sheets\\1_ORK\\WALK\\WALK_005.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "2D-Fantasy-Orcs-Free-Sprite-Sheets/1_ORK/WALK/WALK_006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2D-Fantasy-Orcs-Free-Sprite-Sheets\\1_ORK\\WALK\\WALK_006.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -480,7 +553,7 @@
           "name": "GroupGem",
           "objects": [
             {
-              "name": "gem"
+              "name": "Gem1"
             },
             {
               "name": "Gem2"
@@ -520,8 +593,8 @@
           "layer": "",
           "name": "NewTiledSprite",
           "persistentUuid": "3020cb1a-c36d-4c7d-ab40-7e398fcb329d",
-          "width": 1237,
-          "x": 14,
+          "width": 1329,
+          "x": -21,
           "y": 464,
           "zOrder": 4,
           "numberProperties": [],
@@ -586,7 +659,7 @@
           "height": 67,
           "keepRatio": true,
           "layer": "",
-          "name": "gem",
+          "name": "Gem1",
           "persistentUuid": "3455b7a8-206c-42de-a031-14e15b5524db",
           "width": 48,
           "x": 641,
@@ -602,7 +675,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "gem",
+          "name": "Gem1",
           "persistentUuid": "22987b3c-b147-4593-bb23-2dd97d1bc822",
           "width": 0,
           "x": 793,
@@ -618,7 +691,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "gem",
+          "name": "Gem1",
           "persistentUuid": "3c5aff93-10d8-4777-ba62-7d1923c5d588",
           "width": 0,
           "x": 1010,
@@ -640,6 +713,23 @@
           "x": 560,
           "y": 333,
           "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 141,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Enemy",
+          "persistentUuid": "223bf8c9-3596-43cf-93a3-ca14e56dab32",
+          "width": 146,
+          "x": 1093,
+          "y": 329,
+          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2254,7 +2344,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "gem",
+          "name": "Gem1",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -2394,6 +2484,102 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Enemy",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.5,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "2D-Fantasy-Orcs-Free-Sprite-Sheets\\1_ORK\\WALK\\WALK_002.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 12
+                          },
+                          {
+                            "x": 1333,
+                            "y": 12
+                          },
+                          {
+                            "x": 1333,
+                            "y": 1167
+                          },
+                          {
+                            "x": 21,
+                            "y": 1167
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "2D-Fantasy-Orcs-Free-Sprite-Sheets\\1_ORK\\WALK\\WALK_004.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 12
+                          },
+                          {
+                            "x": 1333,
+                            "y": 12
+                          },
+                          {
+                            "x": 1333,
+                            "y": 1167
+                          },
+                          {
+                            "x": 21,
+                            "y": 1167
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -2412,7 +2598,10 @@
             "objectName": "NewTiledSprite"
           },
           {
-            "objectName": "gem"
+            "objectName": "Enemy"
+          },
+          {
+            "objectName": "Gem1"
           },
           {
             "objectName": "Gem2"
@@ -2420,18 +2609,6 @@
         ]
       },
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "For Girl"
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2452,6 +2629,252 @@
               "actions": []
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Common"
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Second",
+      "name": "Second",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Common"
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": []
+    }
+  ],
+  "externalEvents": [
+    {
+      "associatedLayout": "First",
+      "lastChangeTimeStamp": 0,
+      "name": "Common",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Girl",
+                ">",
+                "700"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Layout1\"",
+                "700",
+                "0",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Gem"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "For Girl"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2665,18 +3088,6 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Gem"
-        },
-        {
           "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2686,7 +3097,7 @@
               },
               "parameters": [
                 "Girl",
-                "gem",
+                "Gem1",
                 "",
                 "",
                 ""
@@ -2705,7 +3116,7 @@
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
-                "gem",
+                "Gem1",
                 "Tween",
                 "\"GemAlpha\"",
                 "0",
@@ -2719,10 +3130,10 @@
                 "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
               },
               "parameters": [
-                "gem",
+                "Gem1",
                 "Tween",
                 "\"GemY\"",
-                "gem.Y()-100",
+                "Gem1.Y() - 100",
                 "\"linear\"",
                 "1",
                 ""
@@ -2776,7 +3187,7 @@
                 "Gem2",
                 "Tween",
                 "\"GemY\"",
-                "gem.Y()-100",
+                "Gem1.Y() - 100",
                 "\"linear\"",
                 "1",
                 ""
@@ -2832,6 +3243,84 @@
                 "GroupGem.Y()-100",
                 "\"linear\"",
                 "1",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\coin.wav",
+                "",
+                "100",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::Exists"
+              },
+              "parameters": [
+                "GroupGem",
+                "Tween",
+                "\"GemAlpha\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "CreateByName"
+              },
+              "parameters": [
+                "",
+                "GroupGem",
+                "\"Gem\"+ToString(RandomInRange(1, 2))",
+                "Girl.X()+50",
+                "Girl.Y()-100",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "lerp(CameraCenterX(), Girl.X(), 0.1)",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterY"
+              },
+              "parameters": [
+                "",
+                "=",
+                "Girl.Y()-100",
+                "",
                 ""
               ]
             }
@@ -2842,95 +3331,130 @@
           "conditions": [],
           "actions": []
         }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Light",
-              "doubleParameters": {
-                "elevation": 45,
-                "intensity": 1,
-                "rotation": 0
-              },
-              "stringParameters": {
-                "groundColor": "64;64;64",
-                "skyColor": "255;255;255",
-                "top": "Y-"
-              },
-              "booleanParameters": {}
-            }
-          ]
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
-        },
-        {
-          "name": "Effect",
-          "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Opacity",
-          "type": "OpacityCapability::OpacityBehavior"
-        },
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior"
-        },
-        {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior"
-        },
-        {
-          "name": "Resizable",
-          "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
       ]
     }
   ],
-  "externalEvents": [],
   "eventsFunctionsExtensions": [],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "associatedLayout": "First",
+      "name": "Layout1",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTiledSprite",
+          "persistentUuid": "f25e60af-6a87-42f1-b18e-d4fb22b14f34",
+          "width": 1298,
+          "x": -7,
+          "y": 484,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 54,
+          "keepRatio": true,
+          "layer": "",
+          "name": "plat",
+          "persistentUuid": "ecd91dc6-e5e6-43b2-8cb4-e325d804b0bc",
+          "width": 130,
+          "x": 632,
+          "y": 286,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTiledSprite",
+          "persistentUuid": "cded069b-d7c3-4b6f-a010-6f78e922d115",
+          "width": 171,
+          "x": 904,
+          "y": 200,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTiledSprite",
+          "persistentUuid": "a1b8fd2f-0a48-41d9-a474-69ef2702d2df",
+          "width": 193,
+          "x": 150,
+          "y": 311,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Gem1",
+          "persistentUuid": "2dbcd420-3f28-4a2a-8082-7ea27fd87a22",
+          "width": 0,
+          "x": 663,
+          "y": 189,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Gem2",
+          "persistentUuid": "32956d47-0f56-4c4d-aadf-cb619f887924",
+          "width": 0,
+          "x": 946,
+          "y": 114,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      }
+    }
+  ],
   "externalSourceFiles": []
 }
