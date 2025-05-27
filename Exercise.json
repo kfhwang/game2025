@@ -1052,12 +1052,33 @@
       "folded": true,
       "name": "Score",
       "type": "number",
-      "value": 0
+      "value": 100
     },
     {
       "name": "jump",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "GameData",
+      "type": "structure",
+      "children": [
+        {
+          "name": "name",
+          "type": "string",
+          "value": "md"
+        },
+        {
+          "name": "score",
+          "type": "number",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "name": "GameRank",
+      "type": "array",
+      "children": []
     }
   ],
   "layouts": [
@@ -1330,7 +1351,13 @@
           ]
         }
       ],
-      "variables": [],
+      "variables": [
+        {
+          "name": "rank",
+          "type": "string",
+          "value": "0"
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -4263,6 +4290,77 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"s\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SendAsyncRequest"
+              },
+              "parameters": [
+                "\"http://127.0.0.1/postscore\"",
+                "ToJSON(GameData)",
+                "\"POST\"",
+                "\"application/json\"",
+                "Rank",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"c\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "ToString(rank)",
+                "GameRank"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -4971,7 +5069,7 @@
                 "Score",
                 "Text",
                 "=",
-                "ToString(GlobalVariable(Score))"
+                "ToString(GlobalVariable(GameData.score))"
               ]
             }
           ]
@@ -5462,7 +5560,7 @@
                 "value": "ModVarGlobal"
               },
               "parameters": [
-                "Score",
+                "GameData.score",
                 "+",
                 "100"
               ]
@@ -5527,11 +5625,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         }
       ]
     }
