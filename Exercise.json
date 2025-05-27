@@ -4313,6 +4313,7 @@
           "actions": [
             {
               "type": {
+                "await": true,
                 "value": "SendAsyncRequest"
               },
               "parameters": [
@@ -4320,8 +4321,25 @@
                 "ToJSON(GameData)",
                 "\"POST\"",
                 "\"application/json\"",
-                "Rank",
+                "rank",
                 ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "JSONToVariableStructure2"
+                  },
+                  "parameters": [
+                    "rank",
+                    "GameRank"
+                  ]
+                }
               ]
             }
           ]
@@ -4345,17 +4363,7 @@
               "parameters": []
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "JSONToVariableStructure2"
-              },
-              "parameters": [
-                "ToString(rank)",
-                "GameRank"
-              ]
-            }
-          ]
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
